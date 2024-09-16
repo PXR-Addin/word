@@ -1,3 +1,629 @@
-/*! For license information please see taskpane.js.LICENSE.txt */
-!function(){"use strict";var t,e,n,r,o={14385:function(t){t.exports=function(t,e){return e||(e={}),t?(t=String(t.__esModule?t.default:t),e.hash&&(t+=e.hash),e.maybeNeedQuotes&&/[\t\n\f\r "'=<>`]/.test(t)?'"'.concat(t,'"'):t):t}},98362:function(t,e,n){t.exports=n.p+"assets/logo-filled.png"},58394:function(t,e,n){t.exports=n.p+"1fda685b81e1123773f6.css"}},a={};function c(t){var e=a[t];if(void 0!==e)return e.exports;var n=a[t]={exports:{}};return o[t](n,n.exports,c),n.exports}c.m=o,c.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return c.d(e,{a:e}),e},c.d=function(t,e){for(var n in e)c.o(e,n)&&!c.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},c.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),c.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},function(){var t;c.g.importScripts&&(t=c.g.location+"");var e=c.g.document;if(!t&&e&&(e.currentScript&&(t=e.currentScript.src),!t)){var n=e.getElementsByTagName("script");if(n.length)for(var r=n.length-1;r>-1&&(!t||!/^http(s?):/.test(t));)t=n[r--].src}if(!t)throw new Error("Automatic publicPath is not supported in this browser");t=t.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),c.p=t}(),c.b=document.baseURI||self.location.href,function(){function t(e){return t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},t(e)}function e(){e=function(){return r};var n,r={},o=Object.prototype,a=o.hasOwnProperty,c=Object.defineProperty||function(t,e,n){t[e]=n.value},i="function"==typeof Symbol?Symbol:{},s=i.iterator||"@@iterator",u=i.asyncIterator||"@@asyncIterator",l=i.toStringTag||"@@toStringTag";function f(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{f({},"")}catch(n){f=function(t,e,n){return t[e]=n}}function p(t,e,n,r){var o=e&&e.prototype instanceof x?e:x,a=Object.create(o.prototype),i=new j(r||[]);return c(a,"_invoke",{value:I(t,n,i)}),a}function h(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}r.wrap=p;var d="suspendedStart",y="suspendedYield",g="executing",m="completed",v={};function x(){}function w(){}function b(){}var k={};f(k,s,(function(){return this}));var E=Object.getPrototypeOf,L=E&&E(E(B([])));L&&L!==o&&a.call(L,s)&&(k=L);var P=b.prototype=x.prototype=Object.create(k);function T(t){["next","throw","return"].forEach((function(e){f(t,e,(function(t){return this._invoke(e,t)}))}))}function S(e,n){function r(o,c,i,s){var u=h(e[o],e,c);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==t(f)&&a.call(f,"__await")?n.resolve(f.__await).then((function(t){r("next",t,i,s)}),(function(t){r("throw",t,i,s)})):n.resolve(f).then((function(t){l.value=t,i(l)}),(function(t){return r("throw",t,i,s)}))}s(u.arg)}var o;c(this,"_invoke",{value:function(t,e){function a(){return new n((function(n,o){r(t,e,n,o)}))}return o=o?o.then(a,a):a()}})}function I(t,e,r){var o=d;return function(a,c){if(o===g)throw Error("Generator is already running");if(o===m){if("throw"===a)throw c;return{value:n,done:!0}}for(r.method=a,r.arg=c;;){var i=r.delegate;if(i){var s=N(i,r);if(s){if(s===v)continue;return s}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if(o===d)throw o=m,r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);o=g;var u=h(t,e,r);if("normal"===u.type){if(o=r.done?m:y,u.arg===v)continue;return{value:u.arg,done:r.done}}"throw"===u.type&&(o=m,r.method="throw",r.arg=u.arg)}}}function N(t,e){var r=e.method,o=t.iterator[r];if(o===n)return e.delegate=null,"throw"===r&&t.iterator.return&&(e.method="return",e.arg=n,N(t,e),"throw"===e.method)||"return"!==r&&(e.method="throw",e.arg=new TypeError("The iterator does not provide a '"+r+"' method")),v;var a=h(o,t.iterator,e.arg);if("throw"===a.type)return e.method="throw",e.arg=a.arg,e.delegate=null,v;var c=a.arg;return c?c.done?(e[t.resultName]=c.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=n),e.delegate=null,v):c:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,v)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function _(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function B(e){if(e||""===e){var r=e[s];if(r)return r.call(e);if("function"==typeof e.next)return e;if(!isNaN(e.length)){var o=-1,c=function t(){for(;++o<e.length;)if(a.call(e,o))return t.value=e[o],t.done=!1,t;return t.value=n,t.done=!0,t};return c.next=c}}throw new TypeError(t(e)+" is not iterable")}return w.prototype=b,c(P,"constructor",{value:b,configurable:!0}),c(b,"constructor",{value:w,configurable:!0}),w.displayName=f(b,l,"GeneratorFunction"),r.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===w||"GeneratorFunction"===(e.displayName||e.name))},r.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,b):(t.__proto__=b,f(t,l,"GeneratorFunction")),t.prototype=Object.create(P),t},r.awrap=function(t){return{__await:t}},T(S.prototype),f(S.prototype,u,(function(){return this})),r.AsyncIterator=S,r.async=function(t,e,n,o,a){void 0===a&&(a=Promise);var c=new S(p(t,e,n,o),a);return r.isGeneratorFunction(e)?c:c.next().then((function(t){return t.done?t.value:c.next()}))},T(P),f(P,l,"Generator"),f(P,s,(function(){return this})),f(P,"toString",(function(){return"[object Generator]"})),r.keys=function(t){var e=Object(t),n=[];for(var r in e)n.push(r);return n.reverse(),function t(){for(;n.length;){var r=n.pop();if(r in e)return t.value=r,t.done=!1,t}return t.done=!0,t}},r.values=B,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=n,this.done=!1,this.delegate=null,this.method="next",this.arg=n,this.tryEntries.forEach(_),!t)for(var e in this)"t"===e.charAt(0)&&a.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=n)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(r,o){return i.type="throw",i.arg=t,e.next=r,o&&(e.method="next",e.arg=n),!!o}for(var o=this.tryEntries.length-1;o>=0;--o){var c=this.tryEntries[o],i=c.completion;if("root"===c.tryLoc)return r("end");if(c.tryLoc<=this.prev){var s=a.call(c,"catchLoc"),u=a.call(c,"finallyLoc");if(s&&u){if(this.prev<c.catchLoc)return r(c.catchLoc,!0);if(this.prev<c.finallyLoc)return r(c.finallyLoc)}else if(s){if(this.prev<c.catchLoc)return r(c.catchLoc,!0)}else{if(!u)throw Error("try statement without catch or finally");if(this.prev<c.finallyLoc)return r(c.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.tryLoc<=this.prev&&a.call(r,"finallyLoc")&&this.prev<r.finallyLoc){var o=r;break}}o&&("break"===t||"continue"===t)&&o.tryLoc<=e&&e<=o.finallyLoc&&(o=null);var c=o?o.completion:{};return c.type=t,c.arg=e,o?(this.method="next",this.next=o.finallyLoc,v):this.complete(c)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),v},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),_(n),v}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;_(n)}return o}}throw Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:B(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=n),v}},r}function n(t,e,n,r,o,a,c){try{var i=t[a](c),s=i.value}catch(t){return void n(t)}i.done?e(s):Promise.resolve(s).then(r,o)}function r(t){return function(){var e=this,r=arguments;return new Promise((function(o,a){var c=t.apply(e,r);function i(t){n(c,o,a,i,s,"next",t)}function s(t){n(c,o,a,i,s,"throw",t)}i(void 0)}))}}function o(){return a.apply(this,arguments)}function a(){return a=r(e().mark((function t(){return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,Word.run(function(){var t=r(e().mark((function t(n){var r,o,a;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r=n.document.getSelection(),n.load(r),t.next=4,n.sync();case 4:if(0!==r.text.length){t.next=10;break}return console.log("Please select some text before running this function v10."),(o=document.getElementById("error-message")).textContent="Please select some text before running this function.",o.style.display="block",t.abrupt("return");case 10:return a=(a=(a=(a=r.text).replace(/\n\n/g,"\n")).replace(/\n/g," ")).replace(/\s+/g," "),r.insertText(a,Word.InsertLocation.replace),r.font.name="Neue Haas Grotesk Text Pro",r.font.size=10,r.font.color="000000",t.next=20,n.sync();case 20:case"end":return t.stop()}}),t)})));return function(e){return t.apply(this,arguments)}}());case 3:t.next=8;break;case 5:t.prev=5,t.t0=t.catch(0),console.log("Error: "+t.t0);case 8:case"end":return t.stop()}}),t,null,[[0,5]])}))),a.apply(this,arguments)}function c(){return i.apply(this,arguments)}function i(){return i=r(e().mark((function t(){var n;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,Word.run(function(){var t=r(e().mark((function t(n){var r,o,a,c,i,s,u,l,f;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r=n.document.getSelection(),n.load(r,"text"),t.next=4,n.sync();case 4:if(document.getElementById("error-message").style.display="none",0!==r.text.length){t.next=11;break}return console.log("Please select some text before running this function v11."),(o=document.getElementById("error-message")).textContent="Please select some text before running this function.",o.style.display="block",t.abrupt("return");case 11:return a=r.getTextRanges([" "],!1),n.load(a,"text, font"),t.next=15,n.sync();case 15:return c=a.items.map((function(t,e){return{originalText:t.text.trim(),text:t.text.trim().replace(/[^\w\s]/g,"").toLowerCase(),bold:t.font.bold,italic:t.font.italic,underline:t.font.underline,index:e}})),console.log("Original formatted words:",c),i=(i=r.text).replace(/\n\n/g,"\n").replace(/\n/g," ").replace(/\s+/g," ").trim(),console.log("Processed text:",i),s=r.insertText(i,Word.InsertLocation.replace),n.load(s,"text"),t.next=24,n.sync();case 24:u=i.split(/\s+/),l=e().mark((function t(){var r,o,a,i;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return r=u[f],o=s.search(r,{matchWildcards:!1,matchCase:!0}),n.load(o,"text, font"),t.next=5,n.sync();case 5:o.items.length>0?(a=o.items[0],(i=c.find((function(t){return t.originalText===r||t.text===r.replace(/[^\w\s]/g,"").toLowerCase()})))?(console.log('Processing word: "'.concat(r,'", Bold: ').concat(i.bold,", Italic: ").concat(i.italic,", Underline: ").concat(i.underline)),a.font.bold=i.bold,a.font.italic=i.italic,a.font.underline=i.underline):(console.log('No formatting info for word: "'.concat(r,'"')),a.font.bold=!1,a.font.italic=!1,a.font.underline="None")):console.log('Word not found: "'.concat(r,'"'));case 6:case"end":return t.stop()}}),t)})),f=0;case 27:if(!(f<u.length)){t.next=32;break}return t.delegateYield(l(),"t0",29);case 29:f++,t.next=27;break;case 32:return s.font.name="Neue Haas Grotesk Text Pro",s.font.size=10,s.font.color="000000",t.next=37,n.sync();case 37:console.log("Formatting completed");case 38:case"end":return t.stop()}}),t)})));return function(e){return t.apply(this,arguments)}}());case 3:t.next=12;break;case 5:t.prev=5,t.t0=t.catch(0),console.log("Error: "+t.t0),t.t0.stack&&console.log("Stack trace:",t.t0.stack),(n=document.getElementById("error-message")).textContent="An error occurred: "+t.t0.message,n.style.display="block";case 12:case"end":return t.stop()}}),t,null,[[0,5]])}))),i.apply(this,arguments)}function s(){return u.apply(this,arguments)}function u(){return u=r(e().mark((function t(){return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,Word.run(function(){var t=r(e().mark((function t(n){var r;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return(r=n.document.getSelection()).insertHtml(" <span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; background-color: yellow; font-weight: normal;\">[</span><span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; font-weight: normal;\">•</span><span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; background-color: yellow; font-weight: normal;\">]</span>",Word.InsertLocation.replace),r.getRange(Word.RangeLocation.end).select(),t.next=6,n.sync();case 6:console.log("Function completed");case 7:case"end":return t.stop()}}),t)})));return function(e){return t.apply(this,arguments)}}());case 3:t.next=8;break;case 5:t.prev=5,t.t0=t.catch(0),console.error("Error:",t.t0);case 8:case"end":return t.stop()}}),t,null,[[0,5]])}))),u.apply(this,arguments)}function l(){return f.apply(this,arguments)}function f(){return f=r(e().mark((function t(){return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,Word.run(function(){var t=r(e().mark((function t(n){var r;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return(r=n.document.getSelection()).insertHtml(" <span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; background-color: yellow; font-weight: normal;\">[</span><span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; background-color: none; font-weight: normal;\"> </span>",Word.InsertLocation.replace),r.getRange(Word.RangeLocation.end).select(),t.next=6,n.sync();case 6:console.log("Function completed");case 7:case"end":return t.stop()}}),t)})));return function(e){return t.apply(this,arguments)}}());case 3:t.next=8;break;case 5:t.prev=5,t.t0=t.catch(0),console.error("Error:",t.t0);case 8:case"end":return t.stop()}}),t,null,[[0,5]])}))),f.apply(this,arguments)}function p(){return h.apply(this,arguments)}function h(){return h=r(e().mark((function t(){return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=3,Word.run(function(){var t=r(e().mark((function t(n){var r;return e().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return(r=n.document.getSelection()).insertHtml(" <span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; background-color: yellow; font-weight: normal;\">]</span><span style=\"font-family: 'Neue Haas Grotesk Text Pro'; font-size: 10pt; background-color: none; font-weight: normal;\"> </span>",Word.InsertLocation.replace),r.getRange(Word.RangeLocation.end).select(),t.next=6,n.sync();case 6:console.log("Function completed");case 7:case"end":return t.stop()}}),t)})));return function(e){return t.apply(this,arguments)}}());case 3:t.next=8;break;case 5:t.prev=5,t.t0=t.catch(0),console.error("Error:",t.t0);case 8:case"end":return t.stop()}}),t,null,[[0,5]])}))),h.apply(this,arguments)}Office.onReady((function(t){t.host===Office.HostType.Word&&(document.getElementById("sideload-msg").style.display="none",document.getElementById("app-body").style.display="flex",document.getElementById("fixPDFText").onclick=c,document.getElementById("fixPDFTextWithoutStyling").onclick=o,document.getElementById("insertBlobButton").onclick=s,document.getElementById("insertLeftBracket").onclick=l,document.getElementById("insertRightBracket").onclick=p)}))}(),t=c(14385),e=c.n(t),n=new URL(c(58394),c.b),r=new URL(c(98362),c.b),e()(n),e()(r)}();
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/html-loader/dist/runtime/getUrl.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/html-loader/dist/runtime/getUrl.js ***!
+  \*********************************************************/
+/***/ (function(module) {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+
+  // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+  url = String(url.__esModule ? url.default : url);
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  }
+  if (options.maybeNeedQuotes && /[\t\n\f\r "'=<>`]/.test(url)) {
+    return "\"".concat(url, "\"");
+  }
+  return url;
+};
+
+/***/ }),
+
+/***/ "./assets/logo-filled.png":
+/*!********************************!*\
+  !*** ./assets/logo-filled.png ***!
+  \********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/logo-filled.png";
+
+/***/ }),
+
+/***/ "./src/taskpane/taskpane.css":
+/*!***********************************!*\
+  !*** ./src/taskpane/taskpane.css ***!
+  \***********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1fda685b81e1123773f6.css";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	!function() {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	!function() {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"taskpane": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+var __webpack_exports__ = {};
+/*!**********************************!*\
+  !*** ./src/taskpane/taskpane.js ***!
+  \**********************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fixPDFText: function() { return /* binding */ fixPDFText; },
+/* harmony export */   fixPDFTextWithoutStyling: function() { return /* binding */ fixPDFTextWithoutStyling; },
+/* harmony export */   insertBlob: function() { return /* binding */ insertBlob; },
+/* harmony export */   insertLeftBracket: function() { return /* binding */ insertLeftBracket; },
+/* harmony export */   insertRightBracket: function() { return /* binding */ insertRightBracket; }
+/* harmony export */ });
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator.return && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, catch: function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+/*
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+/* global document, Office, Word */
+
+Office.onReady(function (info) {
+  if (info.host === Office.HostType.Word) {
+    document.getElementById("sideload-msg").style.display = "none";
+    document.getElementById("app-body").style.display = "flex";
+    document.getElementById("fixPDFText").onclick = fixPDFText;
+    document.getElementById("fixPDFTextWithoutStyling").onclick = fixPDFTextWithoutStyling; // OG Version
+    document.getElementById("insertBlobButton").onclick = insertBlob;
+    document.getElementById("insertLeftBracket").onclick = insertLeftBracket;
+    document.getElementById("insertRightBracket").onclick = insertRightBracket;
+  }
+});
+function fixPDFTextWithoutStyling() {
+  return _fixPDFTextWithoutStyling.apply(this, arguments);
+}
+function _fixPDFTextWithoutStyling() {
+  _fixPDFTextWithoutStyling = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.prev = 0;
+          _context2.next = 3;
+          return Word.run( /*#__PURE__*/function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(context) {
+              var selection, errorElement, text;
+              return _regeneratorRuntime().wrap(function _callee$(_context) {
+                while (1) switch (_context.prev = _context.next) {
+                  case 0:
+                    selection = context.document.getSelection();
+                    context.load(selection);
+                    _context.next = 4;
+                    return context.sync();
+                  case 4:
+                    if (!(selection.text.length === 0)) {
+                      _context.next = 10;
+                      break;
+                    }
+                    console.log("Please select some text before running this function v10.");
+                    // Display error message in the taskpane
+                    errorElement = document.getElementById("error-message");
+                    errorElement.textContent = "Please select some text before running this function.";
+                    errorElement.style.display = "block";
+                    return _context.abrupt("return");
+                  case 10:
+                    text = selection.text; // Remove double line breaks
+                    text = text.replace(/\n\n/g, '\n');
+
+                    // Remove single line breaks
+                    text = text.replace(/\n/g, ' ');
+
+                    // Replace multiple spaces with a single space
+                    text = text.replace(/\s+/g, ' ');
+
+                    // Replace the text
+                    selection.insertText(text, Word.InsertLocation.replace);
+
+                    // Set font properties
+                    selection.font.name = "Neue Haas Grotesk Text Pro";
+                    selection.font.size = 10;
+                    selection.font.color = "000000"; // Black
+                    _context.next = 20;
+                    return context.sync();
+                  case 20:
+                  case "end":
+                    return _context.stop();
+                }
+              }, _callee);
+            }));
+            return function (_x) {
+              return _ref.apply(this, arguments);
+            };
+          }());
+        case 3:
+          _context2.next = 8;
+          break;
+        case 5:
+          _context2.prev = 5;
+          _context2.t0 = _context2["catch"](0);
+          console.log("Error: " + _context2.t0);
+        case 8:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2, null, [[0, 5]]);
+  }));
+  return _fixPDFTextWithoutStyling.apply(this, arguments);
+}
+function fixPDFText() {
+  return _fixPDFText.apply(this, arguments);
+}
+function _fixPDFText() {
+  _fixPDFText = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+    var errorElement;
+    return _regeneratorRuntime().wrap(function _callee4$(_context5) {
+      while (1) switch (_context5.prev = _context5.next) {
+        case 0:
+          _context5.prev = 0;
+          _context5.next = 3;
+          return Word.run( /*#__PURE__*/function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(context) {
+              var selection, errorElement, ranges, formattedWords, text, newRange, words, _loop, i;
+              return _regeneratorRuntime().wrap(function _callee3$(_context4) {
+                while (1) switch (_context4.prev = _context4.next) {
+                  case 0:
+                    selection = context.document.getSelection();
+                    context.load(selection, 'text');
+                    _context4.next = 4;
+                    return context.sync();
+                  case 4:
+                    // Clear any previous error message
+                    document.getElementById("error-message").style.display = "none";
+                    if (!(selection.text.length === 0)) {
+                      _context4.next = 11;
+                      break;
+                    }
+                    console.log("Please select some text before running this function v11.");
+                    // Display error message in the taskpane
+                    errorElement = document.getElementById("error-message");
+                    errorElement.textContent = "Please select some text before running this function.";
+                    errorElement.style.display = "block";
+                    return _context4.abrupt("return");
+                  case 11:
+                    // Get individual words and their formatting
+                    ranges = selection.getTextRanges([' '], false);
+                    context.load(ranges, 'text, font');
+                    _context4.next = 15;
+                    return context.sync();
+                  case 15:
+                    // Store formatting information
+                    formattedWords = ranges.items.map(function (range, index) {
+                      return {
+                        originalText: range.text.trim(),
+                        text: range.text.trim().replace(/[^\w\s]/g, '').toLowerCase(),
+                        bold: range.font.bold,
+                        italic: range.font.italic,
+                        underline: range.font.underline,
+                        index: index
+                      };
+                    });
+                    console.log("Original formatted words:", formattedWords);
+
+                    // Process the text
+                    text = selection.text;
+                    text = text.replace(/\n\n/g, '\n').replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+                    console.log("Processed text:", text);
+
+                    // Replace the text and get the new range
+                    newRange = selection.insertText(text, Word.InsertLocation.replace);
+                    context.load(newRange, 'text');
+                    _context4.next = 24;
+                    return context.sync();
+                  case 24:
+                    // Split the new text into words
+                    words = text.split(/\s+/); // Create a new range for each word and apply formatting
+                    _loop = /*#__PURE__*/_regeneratorRuntime().mark(function _loop() {
+                      var word, searchResults, wordRange, originalWord;
+                      return _regeneratorRuntime().wrap(function _loop$(_context3) {
+                        while (1) switch (_context3.prev = _context3.next) {
+                          case 0:
+                            word = words[i];
+                            searchResults = newRange.search(word, {
+                              matchWildcards: false,
+                              matchCase: true
+                            });
+                            context.load(searchResults, 'text, font');
+                            _context3.next = 5;
+                            return context.sync();
+                          case 5:
+                            if (searchResults.items.length > 0) {
+                              wordRange = searchResults.items[0];
+                              originalWord = formattedWords.find(function (w) {
+                                return w.originalText === word || w.text === word.replace(/[^\w\s]/g, '').toLowerCase();
+                              });
+                              if (originalWord) {
+                                console.log("Processing word: \"".concat(word, "\", Bold: ").concat(originalWord.bold, ", Italic: ").concat(originalWord.italic, ", Underline: ").concat(originalWord.underline));
+                                wordRange.font.bold = originalWord.bold;
+                                wordRange.font.italic = originalWord.italic;
+                                wordRange.font.underline = originalWord.underline;
+                              } else {
+                                console.log("No formatting info for word: \"".concat(word, "\""));
+                                wordRange.font.bold = false;
+                                wordRange.font.italic = false;
+                                wordRange.font.underline = 'None';
+                              }
+                            } else {
+                              console.log("Word not found: \"".concat(word, "\""));
+                            }
+                          case 6:
+                          case "end":
+                            return _context3.stop();
+                        }
+                      }, _loop);
+                    });
+                    i = 0;
+                  case 27:
+                    if (!(i < words.length)) {
+                      _context4.next = 32;
+                      break;
+                    }
+                    return _context4.delegateYield(_loop(), "t0", 29);
+                  case 29:
+                    i++;
+                    _context4.next = 27;
+                    break;
+                  case 32:
+                    // Set font properties for the entire range
+                    newRange.font.name = "Neue Haas Grotesk Text Pro";
+                    newRange.font.size = 10;
+                    newRange.font.color = "000000"; // Black
+                    _context4.next = 37;
+                    return context.sync();
+                  case 37:
+                    console.log("Formatting completed");
+                  case 38:
+                  case "end":
+                    return _context4.stop();
+                }
+              }, _callee3);
+            }));
+            return function (_x2) {
+              return _ref2.apply(this, arguments);
+            };
+          }());
+        case 3:
+          _context5.next = 12;
+          break;
+        case 5:
+          _context5.prev = 5;
+          _context5.t0 = _context5["catch"](0);
+          console.log("Error: " + _context5.t0);
+          if (_context5.t0.stack) {
+            console.log("Stack trace:", _context5.t0.stack);
+          }
+          // Display any caught errors in the taskpane
+          errorElement = document.getElementById("error-message");
+          errorElement.textContent = "An error occurred: " + _context5.t0.message;
+          errorElement.style.display = "block";
+        case 12:
+        case "end":
+          return _context5.stop();
+      }
+    }, _callee4, null, [[0, 5]]);
+  }));
+  return _fixPDFText.apply(this, arguments);
+}
+function insertBlob() {
+  return _insertBlob.apply(this, arguments);
+}
+function _insertBlob() {
+  _insertBlob = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+    return _regeneratorRuntime().wrap(function _callee6$(_context7) {
+      while (1) switch (_context7.prev = _context7.next) {
+        case 0:
+          _context7.prev = 0;
+          _context7.next = 3;
+          return Word.run( /*#__PURE__*/function () {
+            var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(context) {
+              var range, endRange;
+              return _regeneratorRuntime().wrap(function _callee5$(_context6) {
+                while (1) switch (_context6.prev = _context6.next) {
+                  case 0:
+                    range = context.document.getSelection(); // Insert the blob text with specified font family, size, background color, and normal font weight
+                    range.insertHtml(' <span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; background-color: yellow; font-weight: normal;">[</span><span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; font-weight: normal;">•</span><span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; background-color: yellow; font-weight: normal;">]</span>', Word.InsertLocation.replace);
+                    // Move the cursor to the end of the inserted content
+                    endRange = range.getRange(Word.RangeLocation.end);
+                    endRange.select();
+                    _context6.next = 6;
+                    return context.sync();
+                  case 6:
+                    console.log("Function completed");
+                  case 7:
+                  case "end":
+                    return _context6.stop();
+                }
+              }, _callee5);
+            }));
+            return function (_x3) {
+              return _ref3.apply(this, arguments);
+            };
+          }());
+        case 3:
+          _context7.next = 8;
+          break;
+        case 5:
+          _context7.prev = 5;
+          _context7.t0 = _context7["catch"](0);
+          console.error("Error:", _context7.t0);
+        case 8:
+        case "end":
+          return _context7.stop();
+      }
+    }, _callee6, null, [[0, 5]]);
+  }));
+  return _insertBlob.apply(this, arguments);
+}
+function insertLeftBracket() {
+  return _insertLeftBracket.apply(this, arguments);
+}
+function _insertLeftBracket() {
+  _insertLeftBracket = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
+    return _regeneratorRuntime().wrap(function _callee8$(_context9) {
+      while (1) switch (_context9.prev = _context9.next) {
+        case 0:
+          _context9.prev = 0;
+          _context9.next = 3;
+          return Word.run( /*#__PURE__*/function () {
+            var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(context) {
+              var range, endRange;
+              return _regeneratorRuntime().wrap(function _callee7$(_context8) {
+                while (1) switch (_context8.prev = _context8.next) {
+                  case 0:
+                    range = context.document.getSelection(); // Insert the blob text with specified font family, size, background color, and normal font weight
+                    range.insertHtml(' <span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; background-color: yellow; font-weight: normal;">[</span><span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; background-color: none; font-weight: normal;"> </span>', Word.InsertLocation.replace);
+                    // Move the cursor to the end of the inserted content
+                    endRange = range.getRange(Word.RangeLocation.end);
+                    endRange.select();
+                    _context8.next = 6;
+                    return context.sync();
+                  case 6:
+                    console.log("Function completed");
+                  case 7:
+                  case "end":
+                    return _context8.stop();
+                }
+              }, _callee7);
+            }));
+            return function (_x4) {
+              return _ref4.apply(this, arguments);
+            };
+          }());
+        case 3:
+          _context9.next = 8;
+          break;
+        case 5:
+          _context9.prev = 5;
+          _context9.t0 = _context9["catch"](0);
+          console.error("Error:", _context9.t0);
+        case 8:
+        case "end":
+          return _context9.stop();
+      }
+    }, _callee8, null, [[0, 5]]);
+  }));
+  return _insertLeftBracket.apply(this, arguments);
+}
+function insertRightBracket() {
+  return _insertRightBracket.apply(this, arguments);
+}
+function _insertRightBracket() {
+  _insertRightBracket = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
+    return _regeneratorRuntime().wrap(function _callee10$(_context11) {
+      while (1) switch (_context11.prev = _context11.next) {
+        case 0:
+          _context11.prev = 0;
+          _context11.next = 3;
+          return Word.run( /*#__PURE__*/function () {
+            var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9(context) {
+              var range, endRange;
+              return _regeneratorRuntime().wrap(function _callee9$(_context10) {
+                while (1) switch (_context10.prev = _context10.next) {
+                  case 0:
+                    range = context.document.getSelection(); // Insert the blob text with specified font family, size, background color, and normal font weight
+                    range.insertHtml(' <span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; background-color: yellow; font-weight: normal;">]</span><span style="font-family: \'Neue Haas Grotesk Text Pro\'; font-size: 10pt; background-color: none; font-weight: normal;"> </span>', Word.InsertLocation.replace);
+                    // Move the cursor to the end of the inserted content
+                    endRange = range.getRange(Word.RangeLocation.end);
+                    endRange.select();
+                    _context10.next = 6;
+                    return context.sync();
+                  case 6:
+                    console.log("Function completed");
+                  case 7:
+                  case "end":
+                    return _context10.stop();
+                }
+              }, _callee9);
+            }));
+            return function (_x5) {
+              return _ref5.apply(this, arguments);
+            };
+          }());
+        case 3:
+          _context11.next = 8;
+          break;
+        case 5:
+          _context11.prev = 5;
+          _context11.t0 = _context11["catch"](0);
+          console.error("Error:", _context11.t0);
+        case 8:
+        case "end":
+          return _context11.stop();
+      }
+    }, _callee10, null, [[0, 5]]);
+  }));
+  return _insertRightBracket.apply(this, arguments);
+}
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+/*!************************************!*\
+  !*** ./src/taskpane/taskpane.html ***!
+  \************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ "./node_modules/html-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./taskpane.css */ "./src/taskpane/taskpane.css"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/logo-filled.png */ "./assets/logo-filled.png"), __webpack_require__.b);
+// Module
+var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
+var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
+var code = "<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->\n<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->\n\n<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>Contoso Task Pane Add-in</title>\n\n    <!-- Office JavaScript API -->\n    <" + "script type=\"text/javascript\" src=\"https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js\"><" + "/script>\n\n    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->\n    <link rel=\"stylesheet\" href=\"https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css\"/>\n\n    <!-- Template styles -->\n    <link href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n\n<body class=\"ms-font-m ms-welcome ms-Fabric\">\n    <header class=\"ms-welcome__header ms-bgColor-neutralLighter\">\n        <img width=\"90\" height=\"90\" src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"Contoso\" title=\"Contoso\" />\n        <h3 class=\"ms-font-xl\">Word Tools für MS Office</h3>\n    </header>\n    <section id=\"sideload-msg\" class=\"ms-welcome__main\">\n        <h2 class=\"ms-font-xl\">Please <a target=\"_blank\" href=\"https://learn.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing\">sideload</a> your add-in to see app body.</h2>\n    </section>\n    <main id=\"app-body\" class=\"ms-welcome__main\" style=\"display: none;\">\n        <h2 class=\"ms-font-xl\">  </h2>\n        <ul class=\"ms-List ms-welcome__features\">\n            <li class=\"ms-ListItem\">\n                <i class=\"ms-Icon ms-Icon--Edit ms-font-xl\"></i>\n                <span class=\"ms-font-l\">\n                    Ungewollte Absätze aus PDF-kopierten Texten entfernen\n                    <p><button id=\"fixPDFTextWithoutStyling\">Absätze entfernen</button></p>\n                    <p><button id=\"fixPDFText\">Absätze entfernen + Format behalten</button></p>\n                </span>\n            </li>\n            <li class=\"ms-ListItem\">\n                <i class=\"ms-Icon ms-Icon--Edit ms-font-xl\"></i>\n                <span class=\"ms-font-l\">\n                    Blob-Platzhalter Einfügen\n                    <p><button id=\"insertLeftBracket\">[</button> <button id=\"insertBlobButton\">[●]</button> <button id=\"insertRightBracket\">]</button> </p>\n                    <!-- <p><button id=\"debugFunction\">Test</button></p> -->\n                </span>\n            </li>\n    <!-- Error for missing selection -->\n                    <div id=\"error-message\" style=\"color: red; display: none;\"></div>\n</ul>\n    </main>\n   \n\n</body>\n\n</html>\n";
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (code);
+}();
+/******/ })()
+;
 //# sourceMappingURL=taskpane.js.map
